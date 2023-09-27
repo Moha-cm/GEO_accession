@@ -1,0 +1,112 @@
+---
+title: "Metadata Extraction"
+author: "MOHAN Kumar"
+date: "2023-09-27"
+output: html_document
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Importing the library 
+```{r,eval=FALSE}
+library(GEOquery)
+```
+GEOquery package is 
+
+
+# Reading the GSM_ids from the file
+
+```{r,eval=FALSE}
+data <- read.csv("GEO_samples_metadata _extraction\\GSM_names.csv",header = TRUE, sep = "\t")
+```
+
+## Creating the empty dataframe
+
+```{r,eval=FALSE}
+df1 <- data.frame(
+  source = character(0),
+  geo_accession = character(0),
+  series_id = character(0),
+  platform_id = character(0),
+  organism = character(0),
+  molecule = character(0),
+  library_strategy = character(0),
+  library_source = character(0),
+  library_selection = character(0),
+  submission_date = character(0),
+  title = character(0),
+  data_row_count = numeric(0),  # Use numeric for data_row_count
+  contact_country = character(0),
+  contact_city = character(0)
+)
+
+```
+
+# Creating the vectors from the readed  file 
+
+```{r,eval=FALSE}
+gsm_names <- c(data$GSM_ids)
+```
+
+
+# Aggregating metadata from multiple GSM samples into one dataframe
+
+```{r,eval=FALSE}
+for (x in gsm_names) {
+  gsm_list <- getGEO(x)
+  
+  # Extract metadata
+  source <- gsm_list@header$source_name_ch1
+  geo_accession <- gsm_list@header$geo_accession
+  series_id <- gsm_list@header$series_id
+  platform_id <- gsm_list@header$platform_id
+  organism <- gsm_list@header$organism_ch1
+  molecule <- gsm_list@header$molecule_ch1
+  library_strategy <- gsm_list@header$library_strategy
+  library_source <- gsm_list@header$library_source
+  library_selection <- gsm_list@header$library_selection
+  submission_date <- gsm_list@header$submission_date
+  title <- gsm_list@header$title
+  data_row_count <- gsm_list@header$data_row_count
+  contact_country <- gsm_list@header$contact_country
+  contact_city <- gsm_list@header$contact_city
+  institute <- gsm_list@header$contact_institute
+  
+  # Create a temporary data frame for the current iteration
+  df <- data.frame(
+    Source = source,
+    Geo_accession = geo_accession,
+    Series_id = series_id,
+    Platform_id = platform_id,
+    Organism = organism,
+    Molecule = molecule,
+    Library_strategy = library_strategy,
+    Library_source = library_source,
+    Library_selection = library_selection,
+    Submission_date = submission_date,
+    Title = title,
+    Data_row_count = data_row_count,
+    Contact_country = contact_country,
+    Contact_city = contact_city,
+    Institute = institute
+  )
+  
+  # Append the temporary data frame to df1
+  df1 <- rbind(df1, df)
+}
+```
+
+# Saving Aggregated dataframe 
+
+```{r,eval=FALSE}
+write.csv(df1, "GEO_samples_metadata _extraction\\GSM_metadata.csv", row.names=FALSE)
+```
+
+
+
+
