@@ -8,3 +8,5 @@
   In this tutorial, by using the different  GSM sample ids to extract the metadata and stored in the dataframe and writing into a csv file.
   
   ### Accesing the metadata with GSM sample_ids (https://moha-cm.github.io/GEO_accession/)
+
+  [Contribution guidelines for this work](docs/index.html)
