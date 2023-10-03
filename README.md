@@ -6,8 +6,11 @@
 
   The GEOquery helps to extract the samples metadata with GSE or GSM or Platform numbers.
   In this tutorial, by using the different  GSM sample ids to extract the metadata and stored in the dataframe and writing into a csv file.
-  
+
+  # To Get the metadata by using the GSM ids
   ### [Accesing the metadata with GSM sample_ids](https://moha-cm.github.io/GEO_accession/)
+
+  # To Get the metadata by GSE ids
   
 
   
