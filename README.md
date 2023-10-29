@@ -1,16 +1,71 @@
-# GEO_accession
+# GEO Accession with GEOquery Package
 
-# GEOquery pacakage 
-  The GEOquery package is useful of extraction of data from the Gene Expression Omnibus. 
-  The NCBI GEO has  wide range of high-througput experimental data. The experimental data and supplementary files (which includes Samples,Series,Platforms) has been submitted  by the owner  to the GEO Datasets database.
+Welcome to the GEO Accession repository! This README provides an overview of how to access gene expression data from the Gene Expression Omnibus (GEO) using the GEOquery package in R.
 
-  The GEOquery helps to extract the samples metadata with GSE or GSM or Platform numbers.
-  In this tutorial, by using the different  GSM sample ids to extract the metadata and stored in the dataframe and writing into a csv file.
+## Introduction
 
-  # To Get the metadata by using the GSM ids
-  ### [Accesing the metadata with GSM sample_ids](https://moha-cm.github.io/GEO_accession/)
+The GEOquery package is a valuable tool for extracting high-throughput experimental data from the National Center for Biotechnology Information (NCBI) GEO. It allows you to access a wide range of data, including samples, series, and platforms, which are submitted to the GEO Datasets database by data owners.
 
-  # To Get the metadata by GSE ids
+## Getting Started
+
+- To access the metadata associated with GSM (GSMxxx) sample IDs, follow our tutorial on [Accessing Metadata with GSM Sample IDs](https://moha-cm.github.io/GEO_accession/).
+
+- To access metadata by GSE (GSExxx) IDs, refer to the documentation within the repository.
+
+## Overview of GEO
+
+The Gene Expression Omnibus (GEO) is a public repository [GEO Link](https://www.ncbi.nlm.nih.gov/geo/) that hosts data submitted by various array-based applications and high-throughput sequencing experiments. It includes raw and processed data, covering a wide range of experimental types, such as microarrays, RNA sequencing, ChIP experiments, and DNA sequencing. GEO classifies data into four main categories: platforms, samples, series, and datasets.
+
+- **Platforms (GPLxxx):** These identify the experimental platforms and the elements used in experiments.
+
+- **Samples (GSMxxx):** Each sample record provides information about the sample conditions used in experiments.
+
+- **Series (GSExxx):** Series records group samples and provide details about the experimental design, including the array platform used.
+
+- **Datasets:** Datasets contain curated sets of sample data for data display and analysis. They often share a common probe design.
+
+## GEOquery Package
+
+The GEOquery package is an R tool that simplifies interactions with the NCBI GEO database, making it easy to access gene expression data. You can download data as a list of experiments, including platform information.
+
+## Accessing Data
+
+- To check the list of experiments associated with the data, use the following code:
+  ```R
+  gsm_list <- getGEO(x)
+  total_platform <- length(gsm_list)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
   
+  
+  
+
+  
+        
 
   
