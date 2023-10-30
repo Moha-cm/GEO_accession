@@ -2,6 +2,8 @@
 
 Welcome to the GEO Accession repository! This README provides an overview of how to access gene expression data from the Gene Expression Omnibus (GEO) using the GEOquery package in R.
 
+![geo](https://github.com/Moha-cm/GEO_accession/assets/118077473/3298d386-775b-4d54-9b44-b00f87a51290=250x250)
+
 ## Introduction
 
 The GEOquery package is a valuable tool for extracting high-throughput experimental data from the National Center for Biotechnology Information (NCBI) GEO. It allows you to access a wide range of data, including samples, series, and platforms, which are submitted to the GEO Datasets database by data owners.
@@ -24,6 +26,15 @@ The Gene Expression Omnibus (GEO) is a public repository [GEO Link](https://www.
 
 - **Datasets:** Datasets contain curated sets of sample data for data display and analysis. They often share a common probe design.
 
+  
+
+
+
+![GEO 2](https://github.com/Moha-cm/GEO_accession/assets/118077473/449b2424-75e1-4fac-9ac9-f90d4d4d1449=250x250)
+
+
+![GEO 3 1](https://github.com/Moha-cm/GEO_accession/assets/118077473/bff98815-976a-4fa3-a8da-c46f4f028952=250x250)
+
 ## GEOquery Package
 
 The GEOquery package is an R tool that simplifies interactions with the NCBI GEO database, making it easy to access gene expression data. You can download data as a list of experiments, including platform information.
@@ -37,9 +48,9 @@ The GEOquery package is an R tool that simplifies interactions with the NCBI GEO
 
 
 
-![GEO 2](https://github.com/Moha-cm/GEO_accession/assets/118077473/449b2424-75e1-4fac-9ac9-f90d4d4d1449)
-![GEO 3 1](https://github.com/Moha-cm/GEO_accession/assets/118077473/bff98815-976a-4fa3-a8da-c46f4f028952)
-![geo](https://github.com/Moha-cm/GEO_accession/assets/118077473/3298d386-775b-4d54-9b44-b00f87a51290)
+
+
+
 
 
 
