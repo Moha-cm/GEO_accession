@@ -2,7 +2,7 @@
 
 Welcome to the GEO Accession repository! This README provides an overview of how to access gene expression data from the Gene Expression Omnibus (GEO) using the GEOquery package in R.
 
-![geo](https://github.com/Moha-cm/GEO_accession/assets/118077473/3298d386-775b-4d54-9b44-b00f87a51290=250x250)
+![geo](https://github.com/Moha-cm/GEO_accession/assets/118077473/3298d386-775b-4d54-9b44-b00f87a51290=150x150)
 
 ## Introduction
 
@@ -30,10 +30,10 @@ The Gene Expression Omnibus (GEO) is a public repository [GEO Link](https://www.
 
 
 
-![GEO 2](https://github.com/Moha-cm/GEO_accession/assets/118077473/449b2424-75e1-4fac-9ac9-f90d4d4d1449=250x250)
+![GEO 2](https://github.com/Moha-cm/GEO_accession/assets/118077473/449b2424-75e1-4fac-9ac9-f90d4d4d1449=150x150)
 
 
-![GEO 3 1](https://github.com/Moha-cm/GEO_accession/assets/118077473/bff98815-976a-4fa3-a8da-c46f4f028952=250x250)
+![GEO 3 1](https://github.com/Moha-cm/GEO_accession/assets/118077473/bff98815-976a-4fa3-a8da-c46f4f028952=150x150)
 
 ## GEOquery Package
 
