@@ -37,7 +37,9 @@ The GEOquery package is an R tool that simplifies interactions with the NCBI GEO
 
 
 
-
+![GEO 2](https://github.com/Moha-cm/GEO_accession/assets/118077473/449b2424-75e1-4fac-9ac9-f90d4d4d1449)
+![GEO 3 1](https://github.com/Moha-cm/GEO_accession/assets/118077473/bff98815-976a-4fa3-a8da-c46f4f028952)
+![geo](https://github.com/Moha-cm/GEO_accession/assets/118077473/3298d386-775b-4d54-9b44-b00f87a51290)
 
 
 
